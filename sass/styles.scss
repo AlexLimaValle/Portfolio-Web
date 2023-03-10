@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@import './secciones/header';
+@import './secciones/skills';
+@import './secciones/aboutMe';
+@import './secciones/work';
+@import './secciones/footer';
+
+// media queries
+
+@import './mediaQueries/desktop';

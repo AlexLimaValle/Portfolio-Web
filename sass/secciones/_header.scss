@@ -1,0 +1,250 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#0c0b0be3 45%,transparent), url(../../img/fondo-1.jpg) center fixed;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    align-items: center;
+    .header__menu{
+        color:#fff;
+        font-size: 2rem;
+        position:absolute;
+        right:10px;
+        top: 10px;
+        border: #fff solid 2px;
+        border-radius: 100%;
+        .header__bar{
+            padding: 7px 15px;
+        }
+    }
+    .header__title{
+        color:#fff;
+        position:absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 1.4rem;
+        .header__h2{
+            text-shadow: 9px 9px 10px 2px #30b437;
+        }
+    }
+    .nav{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+        background: #01333a;
+        transition: display 2s;
+        .nav__close{
+            width: 100%;
+            height: 10%;
+            position: relative;
+            background: #012125;
+            color:#fff;
+            .nav__x{
+                font-size: 2.4rem;
+                position:absolute;
+                right: 28px;
+                top: 14px;
+            }
+        }
+        .nav__present{
+            width: 100%;
+            height: 15%;
+            text-align: center;
+            background: #012125;
+            position: relative;
+            bottom:2px;
+            .nav__present-title{
+                font-size: 3rem;
+                color:#fff;
+            }
+            .nav__present-text{
+                color:#adadad;
+            }
+        }
+        .nav__ul{
+            width: 100%;
+            height: 55%;
+            margin-top: 40px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content:space-evenly;
+            align-content: center;
+            list-style: none;
+            .nav__li{
+                width: 100%;
+                height: 25%;
+                box-shadow: 0px 0px 5px #036a77;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                .nav__a{
+                    text-decoration: none;
+                    color:#fff;
+                    font-size: 2rem;
+                    position: relative;
+                }
+                .nav__a::before{
+                    content: " ";
+                    width: 0%;
+                    height: 10%;
+                    bottom: 0px;
+                    background: #069eb3;
+                    position:absolute;
+                    transition: width .5s;
+                }
+                .nav__a:hover::before{
+                    width: 100%;
+                    right: 0px;
+                }
+            }
+        }
+        .nav__social{
+            width: 60%;
+            height: 8%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 60px;
+            .nav__contact-social{
+                font-size: 1.8rem;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+                color:#fff;
+                border: #fff solid 1px;
+                box-shadow: 0px 0px 10px rgb(12, 197, 221);
+                border-radius: 100%;
+                text-decoration: none;
+                padding: 7px 15px;
+                background-color:#012125;
+            }
+        }
+    }
+    .nav--display{
+        display:none;
+    }
+    .header__perfil-img{
+        width: 80%;
+        height: 35%;
+        border: #0dbfc5 solid 5px;
+        border-radius: 100%;
+        .header__imgMain{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+    }
+    .header__biografy{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20%;
+        position: relative;
+        .header__my-work{
+            width: 100%;
+            height: 80%;
+            font-size: 2.5rem;
+            font-weight: bold;
+            padding-left: 60px;
+            color:#fff;
+            .header__my-work-span{
+                display: block;
+            }
+            .header__my-work-letters{
+                font-size: 3.5rem;
+                color:#0dbfc5;
+                text-shadow: -3px 0px 1px #ff0000;
+            }
+            .header__up{
+                position: relative;
+                bottom: 25px;
+            }
+            .header__up-2{
+                position: relative;
+                bottom: 40px;
+            }
+        }
+        .header__ocupation{
+            position:absolute;
+            top:63%;
+            left: 17%;
+            font-size: 1.2rem;
+            color: #777474;
+        }
+        .header__contact{
+            width: 40%;
+            height: 20%;
+            margin: 0 auto;
+            display: block;
+            border: #0dbfc5 solid 2px;
+            background-color: transparent;
+            color:#fff;
+            position: relative;
+            .header__contact-a{
+                width: 100%;
+                height: 100%;
+                font-size: 1.3rem;
+                text-decoration: none;
+                color:#fff;
+                padding:5px 10px;
+                z-index: 3;
+                position: relative;
+            }
+        }
+        .header__contact::before{
+            content: " ";
+            position:absolute;
+            width: 0%;
+            height: 100%;
+            background: #023b42;
+            top:0;
+            left:0;
+            transition: width .7s;
+        }
+        .header__contact:hover::before{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .header__scrollDown{
+        position:absolute;
+        left:-30px;
+        bottom: 50px;
+        color: #b9b9b9;
+        width: 30%;
+        height: 4%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        transform: rotate(90deg);
+        font-size: 0.9rem;
+        .header__p-scroll{
+            animation: upAndDown .8s linear infinite normal;
+        }
+    }
+    .header__scrollDownLeft{
+        left:80%;
+        bottom: 48px;
+    }
+}
+
+
+@keyframes upAndDown{
+    0%{
+        margin-left: 0px;
+    }
+    50%{
+        margin-left: 10px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}

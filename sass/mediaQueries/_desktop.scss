@@ -1,0 +1,154 @@
+@media only screen and (min-width: 1024px){
+    .header{
+        display: grid;
+        grid-template-columns: 45% 40%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "bio imagen"
+        ;
+        .header__menu{
+            display: none;
+        }
+        .nav{
+            width: 15%;
+            left: 0px;
+            .nav__close{
+                display: none;
+            }
+            .nav__present{
+                height: 30%;
+                .nav__present-title{
+                    position: relative;
+                    top:60px;
+                }
+                .nav__present-text{
+                    position: relative;
+                    top:30%;
+                }
+            }
+            .nav__ul{
+                height: 40%;
+                .nav__li{
+                    box-shadow: none;
+                    border-bottom: 1px solid #012125;
+                    .nav__a{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .nav__social{
+                width: 100%;
+                height: 5%;
+                margin-left: 0px;
+                .nav__contact-social{
+                    margin-left: 10px;
+                    font-size: 1.1rem;
+                    padding: 5px 10px;
+                }
+            }
+        }
+        .nav--display{
+            display: block;
+        }
+        .header__perfil-img{
+            grid-area: imagen;
+            width: 95%;
+            height: 80%;
+        }
+        .header__biografy{
+            grid-area: bio;
+            // background-color: red;
+            height:80%;
+            top:100px;
+            .header__my-work{
+                font-size: 4.5rem;
+                .header__my-work-letters{
+                    font-size: 5.9rem;
+                }
+            }
+            .header__ocupation{
+                left:60px;
+                font-size: 1.5rem;
+                top:55%;
+            }
+            .header__contact{
+                margin-left: 60px;
+                .header__contact-a{
+                    padding:35px 60px;
+                }
+            }
+        }
+        .header__scrollDown{
+            height: 30px;
+            width: 10%;
+            left:12%;
+            bottom: 63px;
+        }
+        .header__scrollDownLeft{
+            left: 93%;
+            bottom: 60px;
+        }
+    }
+    .aboutMe{
+        height: 100vh;
+        display: grid;
+        justify-content: end;
+        align-items: center;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "info hobbie"
+        ;
+        .aboutMe__info{
+            grid-area: info;
+        }
+        .aboutMe__hobbie{
+            grid-area: hobbie;
+        }
+    }
+    .mySkills{
+        height: 100vh;
+        align-items: end;
+        .skill__title{
+            left:180px;
+            top:-120px
+        }
+        .skills{
+            width: 80%;
+            .skill{
+                width: 25%;
+                height: 40%;
+            }
+        }
+    }
+    .footer{
+        width: 80%;
+        display: grid;
+        margin-left: 230px;
+        align-items: center;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 90% 10%;
+        grid-template-areas: 
+        "contact iframe"
+        "copi copi"
+        ;
+        .footer__contact{
+            grid-area: contact;
+            height: 60%;
+            .footer__contact-social{
+                .footer__contact-description{
+                    margin-top: 25px;
+                }
+            }
+        }
+        .footer__iframe{
+            grid-area: iframe;
+            height: 80%;
+            width: 100%;
+        }
+        .footer__copyright{
+            grid-area: copi;
+            height: 100%;
+        }
+    }
+}

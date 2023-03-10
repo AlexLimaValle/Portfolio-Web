@@ -1,0 +1,64 @@
+body{
+    background: #012125;
+}
+
+.aboutMe{
+    width: 100%;
+    height: 70vh;
+    .aboutMe__info{
+        width: 100%;
+        height: 30%;
+        color:#fff;
+        .aboutMe__title{
+            text-align: center;
+        }
+        .aboutMe__text{
+            margin-top: 15px;
+            text-align: center;
+        }
+    }
+    .aboutMe__hobbie{
+        width: 100%;
+        height: 65%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:space-evenly;
+        align-items: center;
+        .aboutMe__h4{
+            width: 100%;
+            height: 20%;
+            font-size: 2rem;
+            margin: 0 auto;
+            text-align: center;
+            color:#fff;
+        }
+        .aboutMe__hobbies{
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-evenly;
+            align-items:center;
+            .aboutMe__description{
+                width: 27%;
+                height: 40%;
+                background: #023b42;
+                border-radius: 10px;
+                border-top-right-radius: 20px;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content:center;
+                align-items: center;
+                color:#fff;
+                box-shadow: 1px 2px 6px -2px #ffffffa2;
+                transition: background .6s;
+                .aboutMe__icon{
+                    font-size: 2rem;
+                }
+            }
+            .aboutMe__description:hover{
+                background: #047685;
+            }
+        }
+    }
+}
